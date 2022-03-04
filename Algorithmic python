@@ -1,0 +1,29 @@
+#USING JUPITER NOTEBOOK WITH ANACONDA
+
+
+#Y finance downloadmwith pip3 install yfiance
+import yfinance as yf
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+Apple = yf.download("AAPL", start = "2010-01-01",end ="2021-01-01")
+
+#ARRAY 
+a = [1,2,3,5]
+ticker=["SPY","AAPL","KO"]
+stocks = yf.download(ticker, start = "2010-01-01",end ="2021-01-01")
+STOCKS
+
+#first five
+stocks.head()
+last five
+stocks.tail()
+infor
+stocks.info()
+
+save to csv
+stocks.to_csv("stockshelloalgo.csv") - to export to csv
+
+stocks = pd.read_csv("stockshelloalgo.csv") - to read in csv
+
+stocks = pd.read_csv("stockshelloalgo.csv",header=[0,1]) = seperated rows used for stocks etc cryptos shows close high and low on top
